@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dsj>
+
+<!-- 
+This is an example setup file, specifying a.o. decoders for separate DSFiltergraph subclasses, some preferences etc.
+dsj will create a minimal version of this in the user's home directory (or at some place you can specify using DSEnvironment
+methods) if none is present. For most basic tasks it is not necessary to ever worry about this.
+-->
+
+	<DSMovie/>
+	<DSDvd>
+		<!-- instruct dsj to use these decoders. Remove node to make DirectShow pick filter automatically-->
+		<!--ac3decoder name="ffdshow Audio Decoder"/-->
+		<!--mpegdecoder name="Elecard MPEG-2 Video Decoder"/-->
+	</DSDvd>
+	<DSDVCam/>
+	<DSCapture>
+		<!--Setup information for Pinnacle Moviebox USB -->
+		<device name="Cirrus Logic USB-DVR2 Source">
+			<!-- instruct dsj to use these decoders/denultiplexers. Remove node to make DirectShow pick filter automatically-->
+
+			<!-- both Demux II versions seem to work reliably -->
+			<!--mpegdemux name="Pinnacle MPEG2 Demux II"/-->
+			<!--mpegdemux name="Pinnacle MPEG2 Demux II (Moviebox USB Version)"/-->
+
+			<!-- Demux 4 (driver ver. 2.09) and the Cirrus splitter work, but tend to hang on stop / close -->
+			<!--mpegdemux name="Pinnacle MPEG2 Demux 4"/-->
+			<!--mpegdemux name="Cirrus Logic USB-DVR2 Splitter"/-->
+			<mpegdecoder name="Elecard MPEG-2 Video Decoder"/>
+		</device>
+	</DSCapture>
+	<DSGraph/>
+	<DSBDAGraph>
+		<!--mpegdecoder name="Elecard MPEG-2 Video Decoder"/-->
+		<!--mpegdecoder name="ffdshow Video Decoder"/-->
+		<!--audiodecoder name="Elecard Layer II Audio Decoder"/-->
+		<channellist file="Channels.xml" />	
+	</DSBDAGraph>
+	<DSStreamBufferGraph>
+		<!--mpegdecoder name="Elecard MPEG-2 Video Decoder"/-->
+		<!--audiodecoder name="Elecard Layer II Audio Decoder"/-->
+	</DSStreamBufferGraph>
+	<DSHDVTape/>
+	<preferences>
+		<!--bitwise combination of flags to control the DirectDraw7 Renderer. Currently only bit 1 is defined and
+		tells the renderer to synchronize with the monitors vertical refresh (default is off)-->
+		<!--preference name = "DD7Flags" value = "1" /-->
+		<!--VideoMixingRenderer settings:-->
+		<!--preference name = "VMR_Inputs" value = "4" /-->
+		<!--The VMR's default Aspect Ratio mode is "none" (0). Set this to 1 to enable letterboxing.
+		    Letterbox mode may result in short, but visible flashing on setup-->
+		<!--preference name="VMR_AspectRatioMode" value="1"/-->
+		<!--Mix & BMP flags govern the VMR's video (mix) and Bitmapoverlay mixing algorithms:
+		    use 16 for bilinear filtering (default) or 32 for point filtering-->
+		<!--preference name="VMR_MixFlags" value="-1"/-->
+		<!--preference name="VMR_BMPFlags" value="32"/-->
+		<preference name = "protocol">
+			<!--This, in combination with user defined network sinks, allows to build matching
+			sink/source pairs for network transmission-->
+			<protocol name="ltsf" value="{E2B7DE03-38C5-11D5-91F6-00104BDB8FF9}" />
+			<protocol name="rtsp" value="{E5B059AC-65A6-400A-A113-06F46EB488DD}" />
+			<protocol name="rtp" value="{158C4421-945F-4826-8851-2459D92CCF07}" />
+		</preference>
+	</preferences>
+	<modules>
+		<sinkmodules>
+			<!-- sink modules are constructed from up to 4 filters: Audio & videoencoders,
+			     multiplexer & filewriter. Some codecs may combine encoders and multiplexer in
+			     a single filter, some multiplexer and filewriter. dsj will asume that if no
+			     special filewriter is specified, the standard file writer will be used. Therefore
+			     codecs with combined multiplexer/filewriters should set filewriter to null.
+			     If no encoders are wanted or needed, do not insert video- and audioencoder nodes
+			 -->
+			<!-- Example 1, this effectively reconstructs the predefined MP4Sink (FileSink.forType(FileSink.MP4...):
+			<module name ="MP4Sink">
+				<muxer name="3ivx D4 Media Muxer" clsid="{12C79975-0C8E-46BF-A680-2BAB64E2F4A4}"/>
+				<audioencoder name ="3ivx D4 Audio Encoder" clsid="{0EC0FC36-22B0-4631-98DB-2598309FD5F9}"/>
+				<videoencoder name="3ivx D4 Video Encoder" clsid="{01EF6E5C-C79B-4E3E-A320-4B57B84F1807}"/>
+			</module>
+			Example 2, leads to an equal setup as built by the predefined OggSink. 
+			This uses a multiplexer/filewriter combination:
+			<module name ="OGGSink">
+				<filewriter name="null"/>
+				<muxer name="Ogg Mux Filter" clsid="{1F3EFFE4-0E70-47C7-9C48-05EB99E20011}"/>
+				<videoencoder name="Theora Encode Filter" clsid="{5C769985-C3E1-4F95-BEE7-1101C465F5FC}"/>
+				<audioencoder name="Vorbis Encode Filter" clsid="{5C94FE86-B93B-467F-BFC3-BD6C91416F9B}"/>
+			</module>
+			Example 3, not representing any predefined sink. The Industrial Streams MPEG encoder
+			combines codecs and multiplexer and uses the standard filewriter:
+			-->
+			<module name="IS_MPEGSink">
+				<muxer name="Industrial Streams MPEG Encoder v5" clsid="{CFD87339-C61F-46CA-B6A1-F87D6B96243E}"/>
+			</module>
+			<!--
+			Example 4, Uses the flv muxer available from http://blog.monogram.sk/janos/ to write Flash Video files. 
+			Make sure to set the ffdShow encoder to FLV1.
+			Note that the muxer will only accept 1 or 2 ch mp3 audio at samplerates of 44100, 22050, 11025 or 5500.
+			Both the LAME and the XP standard mp3 encoders can not produce those samplerates from all input formats and
+			trying to connect with other samplerates may result in longlasting "intelligent connect" attempts.
+			This uses the standard filewriter.
+			-->
+			<module name="FLV_Sink">
+				<muxer clsid="{C1FB436D-3A1A-4F7B-8D69-B8B8BC652718}" name ="Monogram FLV Muxer"/>
+				<videoencoder name="ffdShow Video Encoder" clsid="{D31DB211-4549-4FC0-8B9D-53D118A74B3A}"/>
+				<!--audioencoder name="MPEG Layer-3" clsid="{6A08CF80-0E18-11CF-A24D-0020AFD79767}"/-->
+				<audioencoder name="Lame Audio Encoder" clsid="{B8D27088-FF5F-4B7C-98DC-0E91A1696286}"/>
+			</module>
+			
+			<module name="Lead_NetworkSink">
+				<filewriter name="Lead Network Sink" clsid="{E2B7DE05-38C5-11D5-91F6-00104BDB8FF9}"/>
+				<muxer name="Lead Network Multiplexer" clsid="{E2B7DE01-38C5-11D5-91F6-00104BDB8FF9}"/>
+				<audioencoder name ="Lead AAC Encoder" clsid="{E2B7DD70-38C5-11D5-91F6-00104BDB8FF9}"/>
+				<!--audioencoder name ="Lead AMR Encoder" clsid="{E2B7DBBF-38C5-11D5-91F6-00104BDB8FF9}"/-->
+				<!--videoencoder name="Lead MPEG4 Encoder" clsid="{E2B7DD65-38C5-11D5-91F6-00104BDB8FF9}"/-->
+				<videoencoder name="Lead H264 Encoder" clsid="{E2B7DF33-38C5-11D5-91F6-00104BDB8FF9}"/>
+			</module>
+		</sinkmodules>
+	</modules>
+</dsj>

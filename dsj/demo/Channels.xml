@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channellist>
+<networks>
+	<network name="DVBT">
+		<frequencies name="(All Frequencies)">
+			<frequency bandwidth="7" khz="177500"/>
+			<frequency bandwidth="7" khz="184500"/>
+			<frequency bandwidth="7" khz="191500"/>
+			<frequency bandwidth="7" khz="198500"/>
+			<frequency bandwidth="7" khz="205500"/>
+			<frequency bandwidth="7" khz="212500"/>
+			<frequency bandwidth="7" khz="219500"/>
+			<frequency bandwidth="7" khz="226500"/>
+			<frequency bandwidth="8" khz="474000"/>
+			<frequency bandwidth="8" khz="482000"/>
+			<frequency bandwidth="8" khz="490000"/>
+			<frequency bandwidth="8" khz="498000"/>
+			<frequency bandwidth="8" khz="506000"/>
+			<frequency bandwidth="8" khz="514000"/>
+			<frequency bandwidth="8" khz="522000"/>
+			<frequency bandwidth="8" khz="530000"/>
+			<frequency bandwidth="8" khz="538000"/>
+			<frequency bandwidth="8" khz="546000"/>
+			<frequency bandwidth="8" khz="554000"/>
+			<frequency bandwidth="8" khz="562000"/>
+			<frequency bandwidth="8" khz="570000"/>
+			<frequency bandwidth="8" khz="578000"/>
+			<frequency bandwidth="8" khz="586000"/>
+			<frequency bandwidth="8" khz="594000"/>
+			<frequency bandwidth="8" khz="602000"/>
+			<frequency bandwidth="8" khz="610000"/>
+			<frequency bandwidth="8" khz="618000"/>
+			<frequency bandwidth="8" khz="626000"/>
+			<frequency bandwidth="8" khz="634000"/>
+			<frequency bandwidth="8" khz="642000"/>
+			<frequency bandwidth="8" khz="650000"/>
+			<frequency bandwidth="8" khz="658000"/>
+			<frequency bandwidth="8" khz="666000"/>
+			<frequency bandwidth="8" khz="674000"/>
+			<frequency bandwidth="8" khz="682000"/>
+			<frequency bandwidth="8" khz="690000"/>
+			<frequency bandwidth="8" khz="698000"/>
+			<frequency bandwidth="8" khz="706000"/>
+			<frequency bandwidth="8" khz="714000"/>
+			<frequency bandwidth="8" khz="722000"/>
+			<frequency bandwidth="8" khz="730000"/>
+			<frequency bandwidth="8" khz="738000"/>
+			<frequency bandwidth="8" khz="746000"/>
+			<frequency bandwidth="8" khz="754000"/>
+			<frequency bandwidth="8" khz="762000"/>
+			<frequency bandwidth="8" khz="770000"/>
+			<frequency bandwidth="8" khz="778000"/>
+			<frequency bandwidth="8" khz="786000"/>
+			<frequency bandwidth="8" khz="794000"/>
+			<frequency bandwidth="8" khz="802000"/>
+			<frequency bandwidth="8" khz="810000"/>
+			<frequency bandwidth="8" khz="818000"/>
+			<frequency bandwidth="8" khz="826000"/>
+			<frequency bandwidth="8" khz="834000"/>
+			<frequency bandwidth="8" khz="842000"/>
+			<frequency bandwidth="8" khz="850000"/>
+			<frequency bandwidth="8" khz="858000"/>
+		</frequencies>
+	</network>
+	<network name="DVBS">
+		<frequencies name="Astra 1B/1C/1E/1F/1G/1H/2C (19,2 E)">
+			<frequency khz="10772000" polarization="0" symbolrate="22000"/>
+			<frequency khz="10788000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10818000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10832000" polarization="0" symbolrate="22000"/>
+			<frequency khz="10847000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10862000" polarization="0" symbolrate="22000"/>
+			<frequency khz="10877000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10921000" polarization="0" symbolrate="22000"/>
+			<frequency khz="10979000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11038000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11097000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11156000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11318000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11509000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11568000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11597000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11685000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11720000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11739000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11759000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11778000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11798000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11817000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11837000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11856000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11875000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11895000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11914000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11934000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11954000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11973000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11993000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12012000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12032000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12051000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12071000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12109000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12129000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12149000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12168000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12188000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12207000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12227000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12266000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12285000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12304000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12324000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12344000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12363000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12383000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12402000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12422000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12441000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12460000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12480000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12515000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12522000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12544000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12552000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12574000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12581000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12604000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12611000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12633000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12640000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12663000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12670000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12692000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12699000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12722000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12729000" polarization="1" symbolrate="22000"/>
+		</frequencies>
+	</network>
+	<network name="DVBC">
+		<frequencies name="Europe - (All Frequencies)">
+			<frequency khz="50500" qam="3" symbolrate="6900"/>
+			<frequency khz="57500" qam="3" symbolrate="6900"/>
+			<frequency khz="64500" qam="3" symbolrate="6900"/>
+			<frequency khz="71500" qam="3" symbolrate="6900"/>
+			<frequency khz="78500" qam="3" symbolrate="6900"/>
+			<frequency khz="85500" qam="3" symbolrate="6900"/>
+			<frequency khz="92500" qam="3" symbolrate="6900"/>
+			<frequency khz="99500" qam="3" symbolrate="6900"/>
+			<frequency khz="107500" qam="3" symbolrate="6900"/>
+			<frequency khz="114500" qam="3" symbolrate="6900"/>
+			<frequency khz="121500" qam="3" symbolrate="6900"/>
+			<frequency khz="128500" qam="3" symbolrate="6900"/>
+			<frequency khz="135500" qam="3" symbolrate="6900"/>
+			<frequency khz="142500" qam="3" symbolrate="6900"/>
+			<frequency khz="49500" qam="3" symbolrate="6900"/>
+			<frequency khz="156500" qam="3" symbolrate="6900"/>
+			<frequency khz="163500" qam="3" symbolrate="6900"/>
+			<frequency khz="170500" qam="3" symbolrate="6900"/>
+			<frequency khz="177500" qam="3" symbolrate="6900"/>
+			<frequency khz="184500" qam="3" symbolrate="6900"/>
+			<frequency khz="191500" qam="3" symbolrate="6900"/>
+			<frequency khz="198500" qam="3" symbolrate="6900"/>
+			<frequency khz="205500" qam="3" symbolrate="6900"/>
+			<frequency khz="212500" qam="3" symbolrate="6900"/>
+			<frequency khz="219500" qam="3" symbolrate="6900"/>
+			<frequency khz="226500" qam="3" symbolrate="6900"/>
+			<frequency khz="233500" qam="3" symbolrate="6900"/>
+			<frequency khz="240500" qam="3" symbolrate="6900"/>
+			<frequency khz="247500" qam="3" symbolrate="6900"/>
+			<frequency khz="254500" qam="3" symbolrate="6900"/>
+			<frequency khz="261500" qam="3" symbolrate="6900"/>
+			<frequency khz="268500" qam="3" symbolrate="6900"/>
+			<frequency khz="275500" qam="3" symbolrate="6900"/>
+			<frequency khz="282500" qam="3" symbolrate="6900"/>
+			<frequency khz="289500" qam="3" symbolrate="6900"/>
+			<frequency khz="296500" qam="3" symbolrate="6900"/>
+			<frequency khz="306000" qam="3" symbolrate="6900"/>
+			<frequency khz="314000" qam="3" symbolrate="6900"/>
+			<frequency khz="322000" qam="3" symbolrate="6900"/>
+			<frequency khz="330000" qam="3" symbolrate="6900"/>
+			<frequency khz="338000" qam="3" symbolrate="6900"/>
+			<frequency khz="346000" qam="3" symbolrate="6900"/>
+			<frequency khz="354000" qam="3" symbolrate="6900"/>
+			<frequency khz="362000" qam="3" symbolrate="6900"/>
+			<frequency khz="370000" qam="3" symbolrate="6900"/>
+			<frequency khz="378000" qam="3" symbolrate="6900"/>
+			<frequency khz="386000" qam="3" symbolrate="6900"/>
+			<frequency khz="394000" qam="3" symbolrate="6900"/>
+			<frequency khz="402000" qam="3" symbolrate="6900"/>
+			<frequency khz="410000" qam="3" symbolrate="6900"/>
+			<frequency khz="418000" qam="3" symbolrate="6900"/>
+			<frequency khz="426000" qam="3" symbolrate="6900"/>
+			<frequency khz="434000" qam="3" symbolrate="6900"/>
+			<frequency khz="442000" qam="3" symbolrate="6900"/>
+			<frequency khz="450000" qam="3" symbolrate="6900"/>
+			<frequency khz="458000" qam="3" symbolrate="6900"/>
+			<frequency khz="466000" qam="3" symbolrate="6900"/>
+			<frequency khz="474000" qam="3" symbolrate="6900"/>
+			<frequency khz="482000" qam="3" symbolrate="6900"/>
+			<frequency khz="490000" qam="3" symbolrate="6900"/>
+			<frequency khz="498000" qam="3" symbolrate="6900"/>
+			<frequency khz="506000" qam="3" symbolrate="6900"/>
+			<frequency khz="514000" qam="3" symbolrate="6900"/>
+			<frequency khz="522000" qam="3" symbolrate="6900"/>
+			<frequency khz="530000" qam="3" symbolrate="6900"/>
+			<frequency khz="538000" qam="3" symbolrate="6900"/>
+			<frequency khz="546000" qam="3" symbolrate="6900"/>
+			<frequency khz="554000" qam="3" symbolrate="6900"/>
+			<frequency khz="562000" qam="3" symbolrate="6900"/>
+			<frequency khz="570000" qam="3" symbolrate="6900"/>
+			<frequency khz="578000" qam="3" symbolrate="6900"/>
+			<frequency khz="586000" qam="3" symbolrate="6900"/>
+			<frequency khz="594000" qam="3" symbolrate="6900"/>
+			<frequency khz="602000" qam="3" symbolrate="6900"/>
+			<frequency khz="610000" qam="3" symbolrate="6900"/>
+			<frequency khz="618000" qam="3" symbolrate="6900"/>
+			<frequency khz="626000" qam="3" symbolrate="6900"/>
+			<frequency khz="634000" qam="3" symbolrate="6900"/>
+			<frequency khz="642000" qam="3" symbolrate="6900"/>
+			<frequency khz="650000" qam="3" symbolrate="6900"/>
+			<frequency khz="658000" qam="3" symbolrate="6900"/>
+			<frequency khz="666000" qam="3" symbolrate="6900"/>
+			<frequency khz="674000" qam="3" symbolrate="6900"/>
+			<frequency khz="682000" qam="3" symbolrate="6900"/>
+			<frequency khz="690000" qam="3" symbolrate="6900"/>
+			<frequency khz="698000" qam="3" symbolrate="6900"/>
+			<frequency khz="706000" qam="3" symbolrate="6900"/>
+			<frequency khz="714000" qam="3" symbolrate="6900"/>
+			<frequency khz="722000" qam="3" symbolrate="6900"/>
+			<frequency khz="730000" qam="3" symbolrate="6900"/>
+			<frequency khz="738000" qam="3" symbolrate="6900"/>
+			<frequency khz="746000" qam="3" symbolrate="6900"/>
+			<frequency khz="754000" qam="3" symbolrate="6900"/>
+			<frequency khz="762000" qam="3" symbolrate="6900"/>
+			<frequency khz="770000" qam="3" symbolrate="6900"/>
+			<frequency khz="778000" qam="3" symbolrate="6900"/>
+			<frequency khz="786000" qam="3" symbolrate="6900"/>
+			<frequency khz="794000" qam="3" symbolrate="6900"/>
+			<frequency khz="802000" qam="3" symbolrate="6900"/>
+			<frequency khz="810000" qam="3" symbolrate="6900"/>
+			<frequency khz="818000" qam="3" symbolrate="6900"/>
+			<frequency khz="826000" qam="3" symbolrate="6900"/>
+			<frequency khz="834000" qam="3" symbolrate="6900"/>
+			<frequency khz="842000" qam="3" symbolrate="6900"/>
+			<frequency khz="850000" qam="3" symbolrate="6900"/>
+			<frequency khz="858000" qam="3" symbolrate="6900"/>
+			<frequency khz="50500" qam="3" symbolrate="6875"/>
+			<frequency khz="57500" qam="3" symbolrate="6875"/>
+			<frequency khz="64500" qam="3" symbolrate="6875"/>
+			<frequency khz="71500" qam="3" symbolrate="6875"/>
+			<frequency khz="78500" qam="3" symbolrate="6875"/>
+			<frequency khz="85500" qam="3" symbolrate="6875"/>
+			<frequency khz="92500" qam="3" symbolrate="6875"/>
+			<frequency khz="99500" qam="3" symbolrate="6875"/>
+			<frequency khz="107500" qam="3" symbolrate="6875"/>
+			<frequency khz="114500" qam="3" symbolrate="6875"/>
+			<frequency khz="121500" qam="3" symbolrate="6875"/>
+			<frequency khz="128500" qam="3" symbolrate="6875"/>
+			<frequency khz="135500" qam="3" symbolrate="6875"/>
+			<frequency khz="142500" qam="3" symbolrate="6875"/>
+			<frequency khz="149500" qam="3" symbolrate="6875"/>
+			<frequency khz="156500" qam="3" symbolrate="6875"/>
+			<frequency khz="163500" qam="3" symbolrate="6875"/>
+			<frequency khz="170500" qam="3" symbolrate="6875"/>
+			<frequency khz="177500" qam="3" symbolrate="6875"/>
+			<frequency khz="184500" qam="3" symbolrate="6875"/>
+			<frequency khz="191500" qam="3" symbolrate="6875"/>
+			<frequency khz="198500" qam="3" symbolrate="6875"/>
+			<frequency khz="205500" qam="3" symbolrate="6875"/>
+			<frequency khz="212500" qam="3" symbolrate="6875"/>
+			<frequency khz="219500" qam="3" symbolrate="6875"/>
+			<frequency khz="226500" qam="3" symbolrate="6875"/>
+			<frequency khz="233500" qam="3" symbolrate="6875"/>
+			<frequency khz="240500" qam="3" symbolrate="6875"/>
+			<frequency khz="247500" qam="3" symbolrate="6875"/>
+			<frequency khz="254500" qam="3" symbolrate="6875"/>
+			<frequency khz="261500" qam="3" symbolrate="6875"/>
+			<frequency khz="268500" qam="3" symbolrate="6875"/>
+			<frequency khz="275500" qam="3" symbolrate="6875"/>
+			<frequency khz="282500" qam="3" symbolrate="6875"/>
+			<frequency khz="289500" qam="3" symbolrate="6875"/>
+			<frequency khz="296500" qam="3" symbolrate="6875"/>
+			<frequency khz="306000" qam="3" symbolrate="6875"/>
+			<frequency khz="314000" qam="3" symbolrate="6875"/>
+			<frequency khz="322000" qam="3" symbolrate="6875"/>
+			<frequency khz="330000" qam="3" symbolrate="6875"/>
+			<frequency khz="338000" qam="3" symbolrate="6875"/>
+			<frequency khz="346000" qam="3" symbolrate="6875"/>
+			<frequency khz="354000" qam="3" symbolrate="6875"/>
+			<frequency khz="362000" qam="3" symbolrate="6875"/>
+			<frequency khz="370000" qam="3" symbolrate="6875"/>
+			<frequency khz="378000" qam="3" symbolrate="6875"/>
+			<frequency khz="386000" qam="3" symbolrate="6875"/>
+			<frequency khz="394000" qam="3" symbolrate="6875"/>
+			<frequency khz="402000" qam="3" symbolrate="6875"/>
+			<frequency khz="410000" qam="3" symbolrate="6875"/>
+			<frequency khz="418000" qam="3" symbolrate="6875"/>
+			<frequency khz="426000" qam="3" symbolrate="6875"/>
+			<frequency khz="434000" qam="3" symbolrate="6875"/>
+			<frequency khz="442000" qam="3" symbolrate="6875"/>
+			<frequency khz="450000" qam="3" symbolrate="6875"/>
+			<frequency khz="458000" qam="3" symbolrate="6875"/>
+			<frequency khz="466000" qam="3" symbolrate="6875"/>
+			<frequency khz="474000" qam="3" symbolrate="6875"/>
+			<frequency khz="482000" qam="3" symbolrate="6875"/>
+			<frequency khz="490000" qam="3" symbolrate="6875"/>
+			<frequency khz="498000" qam="3" symbolrate="6875"/>
+			<frequency khz="506000" qam="3" symbolrate="6875"/>
+			<frequency khz="514000" qam="3" symbolrate="6875"/>
+			<frequency khz="522000" qam="3" symbolrate="6875"/>
+			<frequency khz="530000" qam="3" symbolrate="6875"/>
+			<frequency khz="538000" qam="3" symbolrate="6875"/>
+			<frequency khz="546000" qam="3" symbolrate="6875"/>
+			<frequency khz="554000" qam="3" symbolrate="6875"/>
+			<frequency khz="562000" qam="3" symbolrate="6875"/>
+			<frequency khz="570000" qam="3" symbolrate="6875"/>
+			<frequency khz="578000" qam="3" symbolrate="6875"/>
+			<frequency khz="586000" qam="3" symbolrate="6875"/>
+			<frequency khz="594000" qam="3" symbolrate="6875"/>
+			<frequency khz="602000" qam="3" symbolrate="6875"/>
+			<frequency khz="610000" qam="3" symbolrate="6875"/>
+			<frequency khz="618000" qam="3" symbolrate="6875"/>
+			<frequency khz="626000" qam="3" symbolrate="6875"/>
+			<frequency khz="634000" qam="3" symbolrate="6875"/>
+			<frequency khz="642000" qam="3" symbolrate="6875"/>
+			<frequency khz="650000" qam="3" symbolrate="6875"/>
+			<frequency khz="658000" qam="3" symbolrate="6875"/>
+			<frequency khz="666000" qam="3" symbolrate="6875"/>
+			<frequency khz="674000" qam="3" symbolrate="6875"/>
+			<frequency khz="682000" qam="3" symbolrate="6875"/>
+			<frequency khz="690000" qam="3" symbolrate="6875"/>
+			<frequency khz="698000" qam="3" symbolrate="6875"/>
+			<frequency khz="706000" qam="3" symbolrate="6875"/>
+			<frequency khz="714000" qam="3" symbolrate="6875"/>
+			<frequency khz="722000" qam="3" symbolrate="6875"/>
+			<frequency khz="730000" qam="3" symbolrate="6875"/>
+			<frequency khz="738000" qam="3" symbolrate="6875"/>
+			<frequency khz="746000" qam="3" symbolrate="6875"/>
+			<frequency khz="754000" qam="3" symbolrate="6875"/>
+			<frequency khz="762000" qam="3" symbolrate="6875"/>
+			<frequency khz="770000" qam="3" symbolrate="6875"/>
+			<frequency khz="778000" qam="3" symbolrate="6875"/>
+			<frequency khz="786000" qam="3" symbolrate="6875"/>
+			<frequency khz="794000" qam="3" symbolrate="6875"/>
+			<frequency khz="802000" qam="3" symbolrate="6875"/>
+			<frequency khz="810000" qam="3" symbolrate="6875"/>
+			<frequency khz="818000" qam="3" symbolrate="6875"/>
+			<frequency khz="826000" qam="3" symbolrate="6875"/>
+			<frequency khz="834000" qam="3" symbolrate="6875"/>
+			<frequency khz="842000" qam="3" symbolrate="6875"/>
+			<frequency khz="850000" qam="3" symbolrate="6875"/>
+			<frequency khz="858000" qam="3" symbolrate="6875"/>
+		</frequencies>
+	</network>
+	<network name="ATSC">
+		<frequencies name="(All Frequencies)"/>
+	</network>
+</networks>
+</channellist>

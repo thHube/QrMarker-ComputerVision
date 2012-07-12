@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channellist>
+<networks>
+	<network name="DVBT">
+		<frequencies name="Germany - Berlin">
+		
+		<!--dsj will parse transponder ini files as you can download them from services like www.kingofsat.net.
+		So instead of filling in frequency lists manually, add a "frequencies" node with the desired name and
+		inside that point to the ini file like this:
+		<ini file="transponders/3530.ini"/>
+		Once the file has been parsed and channel scanning done, that ini node will be replaced by something like 
+		the following-->
+		
+			<frequency ChID="6" PID="-1" TSID="772" bandwidth="7" khz="177500" provider="ARD">
+			<stream SID="15" name="WDR"/>
+			<stream SID="16" name="SWR"/>
+			<stream SID="16387" name="BBC World"/>
+			<stream SID="16576" name="FAB"/>
+			</frequency>
+			<frequency ChID="8" PID="-1" TSID="257" bandwidth="8" khz="191500" provider="ARD">
+			<stream SID="1" name="MDR FERNSEHEN"/>
+			<stream SID="2" name="arte"/>
+			<stream SID="3" name="NDR FERNSEHEN"/>
+			<stream SID="9" name="ARD-MHP-Data"/>
+			<stream SID="10" name="ARD-Online-Kanal"/>
+			</frequency>
+			<frequency ChID="25" PID="-1" TSID="773" bandwidth="8" khz="506000" provider="RTL World">
+			<stream SID="16405" name="RTL Television"/>
+			<stream SID="16406" name="RTL2"/>
+			<stream SID="16411" name="Super RTL?"/>
+			<stream SID="16418" name="VOX"/>
+			</frequency>
+			<frequency ChID="27" PID="-1" TSID="258" bandwidth="8" khz="522000" provider="ARD">
+			<stream SID="11" name="rbb Brandenburg"/>
+			<stream SID="12" name="rbb Berlin"/>
+			<stream SID="13" name="Phoenix"/>
+			<stream SID="14" name="Das Erste"/>
+			<stream SID="15" name="EinsExtra"/>
+			</frequency>
+			<frequency bandwidth="8" khz="538000"/>
+			<frequency ChID="33" PID="-1" TSID="514" bandwidth="8" khz="570000" provider="ZDFmobil">
+			<stream SID="514" name="ZDF"/>
+			<stream SID="515" name="3sat"/>
+			<stream SID="517" name="Doku/KiKa"/>
+			</frequency>
+			<frequency ChID="39" PID="-1" TSID="2306" bandwidth="8" khz="618000" provider="T-Systems">
+			<stream SID="16670" name="DVBH Test INT"/>
+			<stream SID="16671" name="DVBH Test Service "/>
+			</frequency>
+			<frequency bandwidth="8" khz="650000"/>
+			<frequency ChID="44" PID="-1" TSID="769" bandwidth="8" khz="658000" provider="ProSiebenSat.1">
+			<stream SID="16394" name="kabel eins"/>
+			<stream SID="16398" name="N24"/>
+			<stream SID="16403" name="ProSieben"/>
+			<stream SID="16408" name="SAT.1"/>
+			</frequency>
+			<frequency bandwidth="8" khz="698000"/>
+			<frequency ChID="56" PID="-1" TSID="774" bandwidth="8" khz="754000" provider="BetaDigital">
+			<stream SID="16392" name="DSF"/>
+			<stream SID="16401" name="9Live"/>
+			<stream SID="16420" name="Eurosport"/>
+			<stream SID="16579" name="TV.Berlin"/>
+			<stream SID="32770" name="tvtv DIGITAL"/>
+			<stream SID="-1" name=""/>
+			</frequency>
+			<frequency ChID="59" TSID="2305" bandwidth="8" khz="778000" provider="RTL World">
+			<stream SID="16400" name="n-tv"/>
+			<stream SID="16421" name="EuroNews"/>
+			<stream SID="24578" name="Star*Sat Country"/>
+			<stream SID="24580" name="Star*Sat EASYTI"/>
+			<stream SID="24581" name="Star*Sat Gold"/>
+			<stream SID="24582" name="Star*Sat Hit-Express"/>
+			<stream SID="24585" name="Euroklassik 1"/>
+			<stream SID="-1" name=""/>
+			<stream SID="24579" name="Star*Sat Melodie"/>
+			<stream SID="24583" name="Star*Sat Klassik"/>
+			<stream SID="24584" name="Jazz Time"/>
+			<stream SID="24586" name="Radio Viola"/>
+			</frequency>
+			<frequency bandwidth="8" khz="826000"/>
+		</frequencies>
+	</network>
+	<network name="DVBS">
+		<frequencies name="NileSat">
+			<!--dsj will parse transponder ini files as you can download them from services like www.kingofsat.net.
+			So instead of filling in frequency lists manually, add a "frequencies" node with the satellite's name and
+			inside that point to the ini file like this:
+			<ini file="transponders/3530.ini"/>
+			Once the file has been parsed and channel scanning done, that ini node will be replaced by something like 
+			the following-->
+			<frequency ChID="0" FEC="34" PID="-1" TSID="11000" khz="10719000" polarization="1" provider="CYFRA +" symbolrate="27500">
+				<stream SID="4402" name="Movies24"/>
+				<stream SID="4403" name="TV 4"/>
+				<stream SID="4404" name="4fun.TV"/>
+				<stream SID="4405" name="Orange Sport"/>
+				<stream SID="4406" name="PLANETE"/>
+				<stream SID="4407" name="MINIMINI"/>
+				<stream SID="4413" name="INFO+/C+ Sport2"/>
+				<stream SID="4428" name="MTV TWO"/>
+				<stream SID="4429" name="HBO"/>
+				<stream SID="4430" name="HALLMARK"/>
+				<stream SID="4431" name="HBO2"/>
+			</frequency>
+			<frequency ChID="8" FEC="34" PID="-1" TSID="11200" khz="10758000" polarization="1" provider="" symbolrate="27500">
+				<stream SID="1201" name="C Cinéma Frisson"/>
+				<stream SID="1202" name="C Cinéma Premier"/>
+				<stream SID="1203" name="C Cinéma Classic"/>
+				<stream SID="1204" name="TPS Star"/>
+				<stream SID="1205" name="C Cinéma Star"/>
+				<stream SID="1206" name="C Cinéma Culte"/>
+				<stream SID="1207" name="C Cinéma Emotion"/>
+				<stream SID="1208" name="C Cinéma Famiz"/>
+				<stream SID="1209" name="C Cinéma Premier 16/9"/>
+				<stream SID="3204" name="Sud Radio"/>
+				<stream SID="3502" name="France Vivace"/>
+			</frequency>
+			<frequency ChID="16" FEC="34" PID="-1" TSID="11400" khz="10796000" polarization="1" provider="" symbolrate="27500">
+				<stream SID="1401" name="Infosport"/>
+				<stream SID="1402" name="Planète Juniors"/>
+				<stream SID="1403" name="Série Club"/>
+				<stream SID="1404" name="Fun TV"/>
+				<stream SID="1405" name="Téva"/>
+				<stream SID="1406" name="Télétoon"/>
+				<stream SID="1407" name="Paris Première"/>
+				<stream SID="1408" name="Piwi"/>
+				<stream SID="1410" name="M6 Music Hits"/>
+				<stream SID="1412" name="CANAL + FAMILY"/>
+				<stream SID="1414" name="Teletoon Africa"/>
+			</frequency>
+			<frequency ChID="24" FEC="34" PID="-1" TSID="11600" khz="10834000" polarization="1" provider="" symbolrate="27500">
+				<stream SID="1101" name="Canal+"/>
+				<stream SID="1102" name="Canal+ Décalé"/>
+				<stream SID="1103" name="France 2"/>
+				<stream SID="1104" name="Eurosport 2"/>
+				<stream SID="1105" name="France 3"/>
+				<stream SID="1106" name="Canal+ Cinéma"/>
+				<stream SID="1107" name="Canal+ Hi-Tech"/>
+				<stream SID="1108" name="Canal+ Sport"/>
+				<stream SID="1109" name="OL TV"/>
+				<stream SID="1110" name="I&gt;TELE"/>
+				<stream SID="1120" name="France 2"/>
+			</frequency>
+			<frequency FEC="34" khz="10853000" polarization="0" symbolrate="27500"/>
+			<frequency ChID="40" FEC="34" PID="-1" TSID="11800" khz="10873000" polarization="1" provider="" symbolrate="27500">
+				<stream SID="1501" name="M6 Music Rock"/>
+				<stream SID="1503" name="Equidia"/>
+				<stream SID="1504" name="Sci Fi"/>
+				<stream SID="1505" name="France 4"/>
+				<stream SID="1506" name="Ushuaia TV"/>
+				<stream SID="1507" name="TV Breizh"/>
+				<stream SID="1508" name="France 5"/>
+				<stream SID="1509" name="France Ô"/>
+				<stream SID="1510" name="La Chaîne Parlementaire"/>
+				<stream SID="1515" name="M6 Music Black"/>
+				<stream SID="1520" name="Equidia Outlist"/>
+			</frequency>
+			<frequency FEC="34" khz="10892000" polarization="0" symbolrate="27500"/>
+			<frequency ChID="56" FEC="34" PID="-1" TSID="12000" khz="10911000" polarization="1" provider="" symbolrate="27500">
+				<stream SID="1601" name="M6"/>
+				<stream SID="1602" name="Eurosport"/>
+				<stream SID="1603" name="Histoire"/>
+				<stream SID="1604" name="TF1"/>
+				<stream SID="1606" name="Odyssée"/>
+				<stream SID="1607" name="TF6"/>
+				<stream SID="1608" name="LCI"/>
+				<stream SID="1609" name="Télétoon+1"/>
+				<stream SID="1610" name="Privatespice"/>
+				<stream SID="1611" name="Planète Thalassa"/>
+				<stream SID="1620" name="M6"/>
+			</frequency>
+			<frequency FEC="34" khz="10930000" polarization="0" symbolrate="27500"/>
+			<frequency FEC="34" khz="11747000" polarization="1" symbolrate="27500"/>
+			<frequency ChID="80" FEC="34" PID="-1" TSID="12000" khz="11766000" polarization="0" provider="" symbolrate="27500">
+				<stream SID="1601" name="M6"/>
+				<stream SID="1602" name="Eurosport"/>
+				<stream SID="1603" name="Histoire"/>
+				<stream SID="1604" name="TF1"/>
+				<stream SID="1606" name="Odyssée"/>
+				<stream SID="1607" name="TF6"/>
+				<stream SID="1608" name="LCI"/>
+				<stream SID="1609" name="Télétoon+1"/>
+				<stream SID="1610" name="Privatespice"/>
+				<stream SID="1611" name="Planète Thalassa"/>
+				<stream SID="1620" name="M6"/>
+			</frequency>
+			<frequency FEC="34" khz="11785000" polarization="1" symbolrate="27500"/>
+			<frequency ChID="96" FEC="34" PID="-1" TSID="12200" khz="11804000" polarization="0" provider="GlobeCast UK" symbolrate="27500">
+				<stream SID="7402" name="Noursat"/>
+				<stream SID="7403" name="Rete Capri"/>
+				<stream SID="7404" name="Radio Capri"/>
+				<stream SID="7448" name="Suryan Radio"/>
+				<stream SID="7449" name="IRN"/>
+				<stream SID="7450" name="Sun KTV"/>
+				<stream SID="7452" name="ANB"/>
+				<stream SID="7455" name="Sun TV +442083356780"/>
+				<stream SID="7456" name="Al Hiwar TV"/>
+				<stream SID="7457" name="CN/TCM CEE Combo"/>
+				<stream SID="7459" name="DMC TV"/>
+			</frequency>
+			<frequency FEC="34" khz="11823000" polarization="1" symbolrate="27500"/>
+			<frequency FEC="34" khz="11843000" polarization="0" symbolrate="27500"/>
+			<frequency FEC="34" khz="11862000" polarization="1" symbolrate="27500"/>
+			<frequency ChID="128" FEC="34" PID="-1" TSID="12600" khz="11881000" polarization="0" provider="Globecast" symbolrate="27500">
+				<stream SID="1701" name="W9"/>
+				<stream SID="1702" name="M6 Boutique la chaine"/>
+				<stream SID="1703" name="Boomerang"/>
+				<stream SID="1704" name="Demain!"/>
+				<stream SID="1705" name="Tele Melody"/>
+				<stream SID="1706" name="CCTV9"/>
+				<stream SID="1707" name="CLP TV"/>
+				<stream SID="1708" name="RTR"/>
+				<stream SID="1710" name="Vesti"/>
+				<stream SID="1711" name="Berbere Television"/>
+				<stream SID="1712" name="TELESUD"/>
+				<stream SID="1714" name="Aljazeera Intl"/>
+			</frequency>
+			<frequency FEC="34" khz="11900000" polarization="1" symbolrate="27500"/>
+			<frequency FEC="34" khz="11919000" polarization="0" symbolrate="27500"/>
+			<frequency FEC="34" khz="11938000" polarization="1" symbolrate="27500"/>
+			<frequency ChID="160" FEC="34" PID="-1" TSID="13000" khz="11958000" polarization="0" provider="Globecast UK" symbolrate="27500">
+				<stream SID="14601" name="BBC Prime"/>
+				<stream SID="14602" name="BBC Entertainment Poland"/>
+				<stream SID="14603" name="BBC Knowledge Poland"/>
+				<stream SID="14604" name="BBC Lifestyle Poland"/>
+				<stream SID="14605" name="BBC CBeebies Poland"/>
+				<stream SID="14606" name="BBC Persian"/>
+				<stream SID="14616" name="BBC WS Persian Radio"/>
+				<stream SID="14622" name="Wedding TV"/>
+				<stream SID="14624" name="D. Travel"/>
+				<stream SID="14625" name="D. World"/>
+				<stream SID="14626" name="D. Science"/>
+			</frequency>
+			<frequency FEC="56" khz="11977000" polarization="1" symbolrate="27500"/>
+			<frequency FEC="34" khz="11996000" polarization="0" symbolrate="27500"/>
+			<frequency FEC="34" khz="12015000" polarization="1" symbolrate="27500"/>
+			<frequency FEC="34" khz="12034000" polarization="0" symbolrate="27500"/>
+			<frequency FEC="34" khz="12054000" polarization="1" symbolrate="27500"/>
+			<frequency FEC="34" khz="12073000" polarization="0" symbolrate="27500"/>
+			<frequency FEC="34" khz="12130000" polarization="1" symbolrate="27500"/>
+			<frequency FEC="34" khz="12149000" polarization="0" symbolrate="27500"/>
+			<frequency ChID="232" FEC="34" PID="-1" TSID="800" khz="12207000" polarization="1" provider="SkyItalia" symbolrate="27500">
+				<stream SID="14501" name="Modalita' d'Acquisto"/>
+				<stream SID="14526" name="GF Feed1"/>
+				<stream SID="14527" name="SKY Assist active"/>
+				<stream SID="14528" name="GF Feed2"/>
+				<stream SID="14529" name="Fox Life +1"/>
+				<stream SID="14540" name="Radio on SKY"/>
+				<stream SID="14541" name="Radio on SKY"/>
+				<stream SID="14545" name="Radio DeeJay"/>
+				<stream SID="14546" name="M2O"/>
+				<stream SID="14547" name="Radio 105"/>
+				<stream SID="14548" name="Virgin Radio"/>
+			</frequency>
+			<frequency FEC="34" khz="12226000" polarization="0" symbolrate="27500"/>
+			<frequency ChID="248" FEC="34" PID="-1" TSID="1000" khz="12245000" polarization="1" provider="TVN Grupa ITI" symbolrate="27500">
+				<stream SID="4311" name="TVN"/>
+				<stream SID="4312" name="TVN 24"/>
+				<stream SID="4313" name="TVN Siedem"/>
+				<stream SID="4314" name="FILMBOX EXTRA"/>
+				<stream SID="4315" name="FILMBOX"/>
+				<stream SID="4316" name="Mango 24"/>
+				<stream SID="4318" name="TVN METEO"/>
+				<stream SID="4319" name="TVN TURBO"/>
+				<stream SID="4320" name="TVN Style"/>
+				<stream SID="4321" name="TVN Gra"/>
+				<stream SID="4322" name="TVN CNBC Biznes"/>
+			</frequency>
+				<frequency FEC="34" khz="12265000" polarization="0" symbolrate="27500"/>
+				<frequency FEC="34" khz="12284000" polarization="1" symbolrate="27500"/>
+				<frequency FEC="34" khz="12303000" polarization="0" symbolrate="27500"/>
+				<frequency FEC="34" khz="12341000" polarization="1" symbolrate="27500"/>
+				<frequency FEC="34" khz="12360000" polarization="0" symbolrate="27500"/>
+				<frequency FEC="34" khz="12399000" polarization="0" symbolrate="27500"/>
+		</frequencies>
+		<frequencies name="Astra 1B/1C/1E/1F/1G/1H/2C (19,2 E)">
+			<frequency khz="10788000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10818000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10832000" polarization="0" symbolrate="22000"/>
+			<frequency khz="10847000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10862000" polarization="0" symbolrate="22000"/>
+			<frequency khz="10877000" polarization="1" symbolrate="22000"/>
+			<frequency khz="10921000" polarization="0" symbolrate="22000"/>
+			<frequency khz="10979000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11038000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11097000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11156000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11318000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11509000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11568000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11597000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11685000" polarization="1" symbolrate="22000"/>
+			<frequency khz="11720000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11739000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11759000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11778000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11798000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11817000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11837000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11856000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11875000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11895000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11914000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11934000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11954000" polarization="0" symbolrate="27500"/>
+			<frequency khz="11973000" polarization="1" symbolrate="27500"/>
+			<frequency khz="11993000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12012000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12032000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12051000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12071000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12109000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12129000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12149000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12168000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12188000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12207000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12227000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12266000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12285000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12304000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12324000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12344000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12363000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12383000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12402000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12422000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12441000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12460000" polarization="0" symbolrate="27500"/>
+			<frequency khz="12480000" polarization="1" symbolrate="27500"/>
+			<frequency khz="12515000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12522000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12544000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12552000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12574000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12581000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12604000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12611000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12633000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12640000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12663000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12670000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12692000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12699000" polarization="1" symbolrate="22000"/>
+			<frequency khz="12722000" polarization="0" symbolrate="22000"/>
+			<frequency khz="12729000" polarization="1" symbolrate="22000"/>
+		</frequencies>
+	</network>
+	<network name="DVBC">
+		<frequencies name="Germany - Berlin">
+			<frequency khz="50500" qam="3" symbolrate="6900"/>
+			<frequency khz="57500" qam="3" symbolrate="6900"/>
+			<frequency khz="64500" qam="3" symbolrate="6900"/>
+			<frequency khz="71500" qam="3" symbolrate="6900"/>
+			<frequency khz="78500" qam="3" symbolrate="6900"/>
+			<frequency khz="85500" qam="3" symbolrate="6900"/>
+			<frequency khz="92500" qam="3" symbolrate="6900"/>
+			<frequency khz="99500" qam="3" symbolrate="6900"/>
+			<frequency khz="107500" qam="3" symbolrate="6900"/>
+			<frequency khz="114500" qam="3" symbolrate="6900"/>
+			<frequency khz="121500" qam="3" symbolrate="6900"/>
+			<frequency khz="128500" qam="3" symbolrate="6900"/>
+			<frequency khz="135500" qam="3" symbolrate="6900"/>
+			<frequency khz="142500" qam="3" symbolrate="6900"/>
+			<frequency khz="49500" qam="3" symbolrate="6900"/>
+			<frequency khz="156500" qam="3" symbolrate="6900"/>
+			<frequency khz="163500" qam="3" symbolrate="6900"/>
+			<frequency khz="170500" qam="3" symbolrate="6900"/>
+			<frequency khz="177500" qam="3" symbolrate="6900"/>
+			<frequency khz="184500" qam="3" symbolrate="6900"/>
+			<frequency khz="191500" qam="3" symbolrate="6900"/>
+			<frequency khz="198500" qam="3" symbolrate="6900"/>
+			<frequency khz="205500" qam="3" symbolrate="6900"/>
+			<frequency khz="212500" qam="3" symbolrate="6900"/>
+			<frequency khz="219500" qam="3" symbolrate="6900"/>
+			<frequency khz="226500" qam="3" symbolrate="6900"/>
+			<frequency khz="233500" qam="3" symbolrate="6900"/>
+			<frequency khz="240500" qam="3" symbolrate="6900"/>
+			<frequency khz="247500" qam="3" symbolrate="6900"/>
+			<frequency khz="254500" qam="3" symbolrate="6900"/>
+			<frequency khz="261500" qam="3" symbolrate="6900"/>
+			<frequency khz="268500" qam="3" symbolrate="6900"/>
+			<frequency khz="275500" qam="3" symbolrate="6900"/>
+			<frequency khz="282500" qam="3" symbolrate="6900"/>
+			<frequency khz="289500" qam="3" symbolrate="6900"/>
+			<frequency khz="296500" qam="3" symbolrate="6900"/>
+			<frequency khz="306000" qam="3" symbolrate="6900"/>
+			<frequency khz="314000" qam="3" symbolrate="6900"/>
+			<frequency khz="322000" qam="3" symbolrate="6900"/>
+			<frequency khz="330000" qam="3" symbolrate="6900"/>
+			<frequency khz="338000" qam="3" symbolrate="6900"/>
+			<frequency khz="346000" qam="3" symbolrate="6900"/>
+			<frequency khz="354000" qam="3" symbolrate="6900"/>
+			<frequency khz="362000" qam="3" symbolrate="6900"/>
+			<frequency khz="370000" qam="3" symbolrate="6900"/>
+			<frequency khz="378000" qam="3" symbolrate="6900"/>
+			<frequency khz="386000" qam="3" symbolrate="6900"/>
+			<frequency khz="394000" qam="3" symbolrate="6900"/>
+			<frequency khz="402000" qam="3" symbolrate="6900"/>
+			<frequency khz="410000" qam="3" symbolrate="6900"/>
+			<frequency khz="418000" qam="3" symbolrate="6900"/>
+			<frequency khz="426000" qam="3" symbolrate="6900"/>
+			<frequency khz="434000" qam="3" symbolrate="6900"/>
+			<frequency khz="442000" qam="3" symbolrate="6900"/>
+			<frequency khz="450000" qam="3" symbolrate="6900"/>
+			<frequency khz="458000" qam="3" symbolrate="6900"/>
+			<frequency khz="466000" qam="3" symbolrate="6900"/>
+			<frequency khz="474000" qam="3" symbolrate="6900"/>
+			<frequency khz="482000" qam="3" symbolrate="6900"/>
+			<frequency khz="490000" qam="3" symbolrate="6900"/>
+			<frequency khz="498000" qam="3" symbolrate="6900"/>
+			<frequency khz="506000" qam="3" symbolrate="6900"/>
+			<frequency khz="514000" qam="3" symbolrate="6900"/>
+			<frequency khz="522000" qam="3" symbolrate="6900"/>
+			<frequency khz="530000" qam="3" symbolrate="6900"/>
+			<frequency khz="538000" qam="3" symbolrate="6900"/>
+			<frequency khz="546000" qam="3" symbolrate="6900"/>
+			<frequency khz="554000" qam="3" symbolrate="6900"/>
+			<frequency khz="562000" qam="3" symbolrate="6900"/>
+			<frequency khz="570000" qam="3" symbolrate="6900"/>
+			<frequency khz="578000" qam="3" symbolrate="6900"/>
+			<frequency khz="586000" qam="3" symbolrate="6900"/>
+			<frequency khz="594000" qam="3" symbolrate="6900"/>
+			<frequency khz="602000" qam="3" symbolrate="6900"/>
+			<frequency khz="610000" qam="3" symbolrate="6900"/>
+			<frequency khz="618000" qam="3" symbolrate="6900"/>
+			<frequency khz="626000" qam="3" symbolrate="6900"/>
+			<frequency khz="634000" qam="3" symbolrate="6900"/>
+			<frequency khz="642000" qam="3" symbolrate="6900"/>
+			<frequency khz="650000" qam="3" symbolrate="6900"/>
+			<frequency khz="658000" qam="3" symbolrate="6900"/>
+			<frequency khz="666000" qam="3" symbolrate="6900"/>
+			<frequency khz="674000" qam="3" symbolrate="6900"/>
+			<frequency khz="682000" qam="3" symbolrate="6900"/>
+			<frequency khz="690000" qam="3" symbolrate="6900"/>
+			<frequency khz="698000" qam="3" symbolrate="6900"/>
+			<frequency khz="706000" qam="3" symbolrate="6900"/>
+			<frequency khz="714000" qam="3" symbolrate="6900"/>
+			<frequency khz="722000" qam="3" symbolrate="6900"/>
+			<frequency khz="730000" qam="3" symbolrate="6900"/>
+			<frequency khz="738000" qam="3" symbolrate="6900"/>
+			<frequency khz="746000" qam="3" symbolrate="6900"/>
+			<frequency khz="754000" qam="3" symbolrate="6900"/>
+			<frequency khz="762000" qam="3" symbolrate="6900"/>
+			<frequency khz="770000" qam="3" symbolrate="6900"/>
+			<frequency khz="778000" qam="3" symbolrate="6900"/>
+			<frequency khz="786000" qam="3" symbolrate="6900"/>
+			<frequency khz="794000" qam="3" symbolrate="6900"/>
+			<frequency khz="802000" qam="3" symbolrate="6900"/>
+			<frequency khz="810000" qam="3" symbolrate="6900"/>
+			<frequency khz="818000" qam="3" symbolrate="6900"/>
+			<frequency khz="826000" qam="3" symbolrate="6900"/>
+			<frequency khz="834000" qam="3" symbolrate="6900"/>
+			<frequency khz="842000" qam="3" symbolrate="6900"/>
+			<frequency khz="850000" qam="3" symbolrate="6900"/>
+			<frequency khz="858000" qam="3" symbolrate="6900"/>
+		</frequencies>
+	</network>
+	<network name=""/>
+</networks>
+<lastChannel SID="1714" khz="11881000" network="DVBS"/>
+</channellist>
